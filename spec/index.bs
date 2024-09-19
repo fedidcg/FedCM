@@ -1084,7 +1084,7 @@ or failure.
             in |config|.
         1. If one of the previous two steps threw an exception, set |config| to failure.
         1. Set |config|.{{IdentityProviderAPIConfig/login_url}} to the result of [=computing
-            the manifest URL=] with |provider|, |config| and |globalObject|.
+            the manifest URL=] with |provider|, |config|, true, and |globalObject|.
         1. If |config|.{{IdentityProviderAPIConfig/login_url}} is null, return failure.
     1. Wait for both |config| and |configInWellKnown| to be set.
     1. If |configInWellKnown| is true, return |config|. Otherwise, return failure.
